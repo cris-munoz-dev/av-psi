@@ -6,6 +6,7 @@ import Mission from './components/Mission'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Divider from './components/Divider'
+import KeyHabilitiesAccordion from './components/KeyHabilitiesAccordion'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Divider />
         <About />
         <Services />
+        <KeyHabilitiesAccordion />
         <Mission />
         <Contact />
       </main>
