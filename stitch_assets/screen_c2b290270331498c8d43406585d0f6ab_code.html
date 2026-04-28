@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alejandra Valenzuela — Psicóloga</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "secondary": "#83523e",
+                        "outline": "#747873",
+                        "surface-container": "#f0eded",
+                        "tertiary-fixed": "#e4e2dd",
+                        "surface-container-high": "#eae8e7",
+                        "on-primary-fixed-variant": "#3c4a3f",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "tertiary-container": "#a09f9b",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-fixed-variant": "#683b29",
+                        "surface": "#fbf9f8",
+                        "outline-variant": "#c3c8c1",
+                        "inverse-primary": "#bbcabd",
+                        "background": "#fbf9f8",
+                        "secondary-container": "#febda4",
+                        "primary-fixed": "#d7e7d8",
+                        "surface-container-highest": "#e4e2e1",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-container": "#7a4a37",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-surface-variant": "#434843",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "surface-bright": "#fbf9f8",
+                        "primary-container": "#94a396",
+                        "error-container": "#ffdad6",
+                        "primary": "#546257",
+                        "secondary-fixed": "#ffdbce",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-container": "#363633",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e2e1",
+                        "on-primary-container": "#2c392f",
+                        "secondary-fixed-dim": "#f8b89f",
+                        "tertiary": "#5e5e5b",
+                        "on-primary-fixed": "#121e16",
+                        "surface-container-low": "#f6f3f2",
+                        "inverse-on-surface": "#f3f0f0",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#bbcabd",
+                        "on-secondary-fixed": "#331104",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#546257",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "stack-lg": "80px",
+                        "gutter": "24px",
+                        "stack-sm": "16px",
+                        "margin-page": "64px",
+                        "unit": "8px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Work Sans"],
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-md": ["Manrope"],
+                        "headline-xl": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-sage-border {
+            border-color: rgba(148, 163, 150, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Component -->
+<header class="bg-[#F9F7F2] dark:bg-stone-950 font-manrope font-light tracking-wide docked full-width top-0 border-b border-b border-[#94A396]/20 flat no shadows flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto sticky z-50">
+<div class="flex items-center gap-4">
+<img alt="Alejandra Valenzuela Logo" class="h-8 w-auto opacity-80" data-alt="Minimalist continuous line art logo of a bird in flight forming AV letters in soft sage green" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBD815RGTuA4OzWz7F9flObM59OzcXVuAeLQGP9IHxoxfSQO-6hSgU-84HAj25itN3rrjiGKsxHEQ129JVTN2jKZQwo4hwCCSjva7kk2wcpWpx1MG6cVnoPqNPBNU78Vkxpqd3lfZC9AExyoUD_wQs5fvmF9u0SJ2iRJAB-BtgvQ7i7Cfj6-4hl2ldKYXoKk1Mwaezizwk7_iiPMTfH7ba4qqD8rudFCIqcm0fKnzlOJfJivb7ILFMKyUiYyvhToJaCtv3WzXWsjAK"/>
+<span class="text-xl font-medium tracking-tighter text-stone-800 dark:text-stone-100 hidden md:block">Alejandra Valenzuela</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-900 dark:text-white font-semibold border-b border-stone-800 dark:border-white pb-1 Active: opacity-80 transition-all hover:text-[#94A396] transition-colors duration-300" href="#inicio">Inicio</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300" href="#sobre-mi">Sobre Mí</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300" href="#servicios">Servicios</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300" href="#mision">Misión</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300" href="#contacto">Contacto</a>
+</nav>
+<a class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:opacity-90 transition-opacity hidden md:inline-flex items-center gap-2" href="#contacto">
+            Agendar Cita
+        </a>
+<button aria-label="Menu" class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</header>
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full max-w-7xl mx-auto px-8 py-stack-lg md:py-[120px] flex flex-col md:flex-row items-center gap-stack-md relative" id="inicio">
+<div class="flex-1 flex flex-col gap-stack-sm md:pr-12 z-10">
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Un espacio seguro para tu bienestar emocional</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-4">
+                    La psicoterapia es un viaje hacia la comprensión de ti mismo. Te acompaño en el proceso de encontrar tu propio equilibrio y libertad mental.
+                </p>
+<div class="mt-8 flex items-center gap-6">
+<a class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded hover:bg-on-primary-fixed-variant transition-colors inline-flex items-center gap-2" href="#contacto">
+                        Agenda tu sesión
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex-1 w-full mt-12 md:mt-0 relative">
+<div class="aspect-[4/5] md:aspect-square rounded-lg overflow-hidden relative border border-outline-variant/30">
+<img alt="Psicóloga Alejandra Valenzuela" class="w-full h-full object-cover grayscale-[20%] sepia-[10%] opacity-90" data-alt="Warm portrait of a professional woman in her late 30s sitting in a sunlit minimalist clinic room, soft natural lighting, sage green and cream tones, evoking empathy and calm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBthB0otAW8_EzZM5cjgeFKQcFKbfYLAJxO0NiPI8m93NfOuHYk7PtF1IVVYdSbvMyMD_8o0o3zCMRPSKwkrgMwtKoeryKTjjaKza6lmofiTicz4pXOAKkq004ZjIrOQ9FB_FDgsjW1S-laLoUc0_EEktzVeRnhggYwwgg2Y5zug-9QKETFLBdRBoSlXnRnN-di32021ZCw1k0IMRETU1ps-s9zKw7azHE40G_vKZ3WcZ4J4UAHnGahM1vNMnYl9uXY4wapkamc6xZ3"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface/20 to-transparent mix-blend-overlay"></div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -left-6 w-24 h-24 border-b border-l border-primary/30 z-0 hidden md:block"></div>
+<div class="absolute -top-6 -right-6 w-24 h-24 border-t border-r border-primary/30 z-0 hidden md:block"></div>
+</div>
+</section>
+<!-- Divider (The Breath Pause) -->
+<div class="w-full max-w-7xl mx-auto px-8 flex justify-center items-center py-stack-md opacity-30">
+<div class="h-[1px] w-12 bg-primary"></div>
+<img alt="AV Logo Mark" class="h-4 mx-4 grayscale opacity-50" data-alt="Minimalist AV logo mark in single line art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9D5cF-j_DFbt5XnM1p7Cd-ksdItcUm8agML9NwLnXVoBk4rU_fTyBDUE8zQCkireurNLKDdzxm1i-pxosLlyiRBMdIeXt0dO77nPJCFbqu7kmHOIuOjML8gpH5K-lOvPNa_iCBYBNEwIA1nnWggjbCivEb9UayuXtGC8PG40OI4x6gWs4WprFJsRQUBkQFfLH6JuXIW6RLnMXveHrg-kPmoyV3Gd61tgPHGXBr8nWAHFCsLZdvBpHm0J4pKSoFdDmWR6_8lpojgbO"/>
+<div class="h-[1px] w-12 bg-primary"></div>
+</div>
+<!-- About Section -->
+<section class="w-full max-w-7xl mx-auto px-8 py-stack-lg flex flex-col md:flex-row gap-gutter items-center" id="sobre-mi">
+<div class="flex-1 w-full order-2 md:order-1 relative">
+<div class="aspect-[3/4] w-full max-w-md mx-auto relative rounded-lg overflow-hidden border border-outline-variant/30 p-2 bg-surface">
+<img alt="Consultorio" class="w-full h-full object-cover rounded" data-alt="Minimalist therapy room with two comfortable neutral armchairs facing each other, a small side table with a simple ceramic vase containing dry branches, bathed in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2ny3AmhGAtsmVuOG2gFyPCuU3GHQUIobE18hXuk9xsCidTWbA0k9vmv15JTx4nMijkOg0XFEUShtukRNqdZXA1Vctww_unSgxSqpTw0E1-74q2-ucdMSawTFrnOGZCiXwvh1fW9zslSD99QpeWydCaQcmkd4DZiyqpKqLRDvLB5lmWLrH9F-Cr3iFRggbJ6dpUw8xdBMN3nIxSfE9QR1gTIF5VPSJ_UqQZP1GS_r0eUEkwhLnZLLbmmOp_5uZ76qyFBOSOfpHmmK"/>
+</div>
+<!-- Botanical line art absolute positioned -->
+<div class="absolute top-1/2 -right-8 transform -translate-y-1/2 opacity-10 pointer-events-none hidden md:block">
+<svg class="text-primary" fill="none" height="200" stroke="currentColor" stroke-width="0.5" viewbox="0 0 120 200" width="120">
+<path d="M60 200 Q60 100 20 0 M60 150 Q90 120 100 80 M60 100 Q30 70 40 30 M60 50 Q80 30 90 10"></path>
+</svg>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-6 order-1 md:order-2">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Sobre Mí</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Soy una psicóloga graduada y de vocación...</h2>
+<div class="font-body-md text-body-md text-on-surface-variant flex flex-col gap-4">
+<p>
+                        Mi enfoque terapéutico se basa en crear un espacio verdaderamente libre de juicios, donde la palabra y el silencio tienen el mismo valor. Creo firmemente que la salud mental no es la ausencia de problemas, sino la capacidad de transitar por ellos con herramientas, consciencia y compasión.
+                    </p>
+<p>
+                        Con más de 10 años de experiencia en clínica de adultos, integro perspectivas que permiten abordar el sufrimiento desde su raíz, buscando no solo el alivio del síntoma, sino una transformación profunda en cómo nos relacionamos con nosotros mismos y nuestro entorno.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="w-full max-w-7xl mx-auto px-8 py-stack-lg flex flex-col gap-stack-md" id="servicios">
+<div class="flex flex-col items-center text-center gap-4 mb-8">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Enfoque Clínico</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Servicios Profesionales</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Terapia Individual</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                            Sesiones 1 a 1 diseñadas para explorar narrativas personales, resolver conflictos internos y desarrollar una mayor autoconsciencia en un entorno confidencial.
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Manejo de Ansiedad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                            Herramientas prácticas y comprensión profunda de los mecanismos del estrés y la ansiedad para recuperar la regulación del sistema nervioso.
+                        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">nature</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Desarrollo Personal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                            Acompañamiento en procesos de transición vital, búsqueda de sentido, fortalecimiento de autoestima y establecimiento de límites sanos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Section -->
+<section class="w-full bg-primary-container text-on-primary-container py-stack-lg my-stack-md" id="mision">
+<div class="max-w-4xl mx-auto px-8 flex flex-col items-center text-center gap-8">
+<span class="material-symbols-outlined text-[48px] opacity-20">format_quote</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[40px] leading-tight font-light">
+                    Mi misión es proporcionar un refugio donde la vulnerabilidad se convierta en la herramienta más poderosa para el cambio.
+                </h2>
+<div class="w-16 h-[1px] bg-on-primary-container/30 my-4"></div>
+<p class="font-body-lg text-body-lg max-w-2xl opacity-90 font-light">
+                    Creo en una psicología desmitificada, accesible y profundamente humana. Un proceso donde caminamos lado a lado hacia la claridad, desenredando las historias que nos limitan para dar paso a una vida más auténtica y conectada.
+                </p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="w-full max-w-7xl mx-auto px-8 py-stack-lg flex flex-col md:flex-row gap-stack-md mb-margin-page" id="contacto">
+<div class="flex-1 flex flex-col gap-6 pr-0 md:pr-12">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Contacto</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Inicia tu proceso</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Dar el primer paso suele ser lo más difícil. Déjame un mensaje y te contactaré a la brevedad para coordinar una primera evaluación o resolver tus dudas.
+                </p>
+<div class="flex flex-col gap-4 mt-auto">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-body-md text-body-md">alejandrav.psicologa@gmail.com</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="font-body-md text-body-md">+56 9 9444 9094</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant mt-4">
+<!-- Pseudo icons for WhatsApp/IG as requested, using material symbols as proxy -->
+<a aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<form class="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-tertiary" for="nombre">Nombre completo</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body-md text-on-surface transition-colors" id="nombre" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-tertiary" for="email">Correo electrónico</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body-md text-on-surface transition-colors" id="email" placeholder="tu@email.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<label class="font-label-sm text-label-sm text-tertiary" for="mensaje">Mensaje</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body-md text-on-surface transition-colors resize-none" id="mensaje" placeholder="¿En qué te puedo ayudar?" rows="3"></textarea>
+</div>
+<button class="mt-4 bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-on-primary-fixed-variant transition-colors self-start" type="button">
+                        Enviar Mensaje
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-[#F9F7F2] dark:bg-stone-950 font-manrope text-sm font-light full-width border-t border-t border-[#94A396]/20 flat no shadows transition-all duration-200 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6 mt-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-light text-stone-700 dark:text-stone-300">Alejandra Valenzuela</span>
+<span class="text-stone-500 text-xs">© 2024 Alejandra Valenzuela — Psicóloga. Transformación y libertad mental.</span>
+</div>
+<div class="flex gap-6 items-center flex-wrap justify-center">
+<a class="text-stone-500 hover:text-stone-800 underline decoration-[#94A396]/30 transition-colors" href="#">Privacidad</a>
+<a class="text-stone-500 hover:text-stone-800 underline decoration-[#94A396]/30 transition-colors" href="#">Términos</a>
+<a class="text-stone-500 hover:text-stone-800 underline decoration-[#94A396]/30 transition-colors" href="#">WhatsApp</a>
+<a class="text-stone-500 hover:text-stone-800 underline decoration-[#94A396]/30 transition-colors" href="#">Instagram</a>
+</div>
+</footer>
+</body></html>
