@@ -35,10 +35,13 @@ export default function About() {
         </h2>
         <div className="font-body-md text-body-md text-on-surface-variant flex flex-col gap-4">
           <p>
-            Mi enfoque terapéutico se basa en crear un espacio verdaderamente libre de juicios, donde la palabra y el silencio tienen el mismo valor. Creo firmemente que la salud mental no es la ausencia de problemas, sino la capacidad de transitar por ellos con herramientas, consciencia y compasión.
+            Poseo una profunda pasión por ayudar a las personas a superar los desafíos emocionales y psicológicos que enfrentan en la vida. Mi enfoque se basa en la empatía, la escucha activa y la construcción de una relación de confianza con mis pacientes.
           </p>
           <p>
-            Con más de 10 años de experiencia en clínica de adultos, integro perspectivas que permiten abordar el sufrimiento desde su raíz, buscando no solo el alivio del síntoma, sino una transformación profunda en cómo nos relacionamos con nosotros mismos y nuestro entorno.
+            Mi enfoque terapéutico se basa en crear un espacio verdaderamente libre de juicios, donde la palabra y el silencio tienen el mismo valor. Creo firmemente que la salud mental no es la ausencia de problemas, sino la capacidad de transitar por ellos con herramientas, conciencia y compasión.
+          </p>
+          <p>
+            Durante mi trayectoria profesional he acompañada a personas en procesos de duelo, manejo de la ansiedad, transición y desarrollo personal, ayudándolos a encontrar claridad, fortaleza y nuevas perspectivas en sus desafíos vitales.
           </p>
         </div>
       </div>
