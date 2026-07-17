@@ -5,7 +5,7 @@ export default function Services() {
       id="servicios"
     >
       <div className="flex flex-col items-center text-center gap-4 mb-8">
-        <span className="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">
+        <span className="font-label-md text-label-md text-tertiary uppercase tracking-widest">
           Enfoque Clínico
         </span>
         <h2 className="font-headline-lg text-headline-lg text-on-surface">

@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex-1 flex flex-col gap-6 order-1 md:order-2">
-        <span className="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">
+        <span className="font-label-md text-label-md text-tertiary uppercase tracking-widest">
           Sobre Mí
         </span>
         <h2 className="font-headline-lg text-headline-lg text-on-surface">

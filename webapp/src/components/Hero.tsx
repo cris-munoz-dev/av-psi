@@ -13,7 +13,7 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex items-center gap-6">
           <a
-            className="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded hover:bg-on-primary-fixed-variant transition-colors inline-flex items-center gap-2"
+            className="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-on-primary-fixed-variant transition-colors inline-flex items-center gap-2"
             href="#contacto"
           >
             Agenda tu sesión

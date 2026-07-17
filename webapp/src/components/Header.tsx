@@ -46,7 +46,7 @@ export default function Header() {
         </a>
       </nav>
       <a
-        className="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:opacity-90 transition-opacity hidden md:inline-flex items-center gap-2"
+        className="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity hidden md:inline-flex items-center gap-2"
         href="#contacto"
       >
         Agendar Cita

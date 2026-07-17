@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
     <section
-      className="w-full max-w-7xl mx-auto px-8 py-stack-lg flex flex-col md:flex-row gap-stack-md mb-margin-page"
+      className="w-full max-w-7xl mx-auto px-8 py-stack-lg flex flex-col md:flex-row gap-stack-md mb-section-padding"
       id="contacto"
     >
       <div className="flex-1 flex flex-col gap-6 pr-0 md:pr-12">
-        <span className="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">
+        <span className="font-label-md text-label-md text-tertiary uppercase tracking-widest">
           Contacto
         </span>
         <h2 className="font-headline-lg text-headline-lg text-on-surface">
@@ -48,7 +48,7 @@ export default function Contact() {
       <div className="flex-1">
         <form className="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <label className="font-label-sm text-label-sm text-tertiary" htmlFor="nombre">
+            <label className="font-label-md text-label-md text-tertiary" htmlFor="nombre">
               Nombre completo
             </label>
             <input
@@ -59,7 +59,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-label-sm text-label-sm text-tertiary" htmlFor="email">
+            <label className="font-label-md text-label-md text-tertiary" htmlFor="email">
               Correo electrónico
             </label>
             <input
@@ -70,7 +70,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-2 mt-2">
-            <label className="font-label-sm text-label-sm text-tertiary" htmlFor="mensaje">
+            <label className="font-label-md text-label-md text-tertiary" htmlFor="mensaje">
               Mensaje
             </label>
             <textarea
@@ -81,7 +81,7 @@ export default function Contact() {
             ></textarea>
           </div>
           <button
-            className="mt-4 bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-on-primary-fixed-variant transition-colors self-start"
+            className="mt-4 bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:bg-on-primary-fixed-variant transition-colors self-start"
             type="button"
           >
             Enviar Mensaje
