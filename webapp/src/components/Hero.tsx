@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero_warm.png';
+
 export default function Hero() {
   return (
     <section
@@ -25,8 +27,8 @@ export default function Hero() {
         <div className="aspect-[4/5] md:aspect-square rounded-lg overflow-hidden relative border border-outline-variant/30">
           <img
             alt="Psicóloga Alejandra Valenzuela"
-            className="w-full h-full object-cover grayscale-[20%] sepia-[10%] opacity-90"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBthB0otAW8_EzZM5cjgeFKQcFKbfYLAJxO0NiPI8m93NfOuHYk7PtF1IVVYdSbvMyMD_8o0o3zCMRPSKwkrgMwtKoeryKTjjaKza6lmofiTicz4pXOAKkq004ZjIrOQ9FB_FDgsjW1S-laLoUc0_EEktzVeRnhggYwwgg2Y5zug-9QKETFLBdRBoSlXnRnN-di32021ZCw1k0IMRETU1ps-s9zKw7azHE40G_vKZ3WcZ4J4UAHnGahM1vNMnYl9uXY4wapkamc6xZ3"
+            className="w-full h-full object-cover opacity-95"
+            src={heroImage}
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-surface/20 to-transparent mix-blend-overlay"></div>
         </div>

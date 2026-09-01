@@ -14,7 +14,7 @@ export default function Services() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
         <div className="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
-          <div className="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+          <div className="w-12 h-12 rounded-full bg-primary-fixed/90 flex items-center justify-center text-on-primary-container">
             <span className="material-symbols-outlined">psychology</span>
           </div>
           <div className="flex flex-col gap-3">
@@ -34,7 +34,7 @@ export default function Services() {
           </div>
         </div>
         <div className="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
-          <div className="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+          <div className="w-12 h-12 rounded-full bg-primary-fixed/90 flex items-center justify-center text-on-primary-container">
             <span className="material-symbols-outlined">groups</span>
           </div>
           <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ export default function Services() {
           </div>
         </div>
         <div className="bg-surface-container-lowest border border-outline-variant/30 rounded p-8 flex flex-col gap-6 hover:shadow-[0_8px_30px_rgba(148,163,150,0.05)] transition-shadow duration-300">
-          <div className="w-12 h-12 rounded-full bg-primary-fixed/30 flex items-center justify-center text-on-primary-container">
+          <div className="w-12 h-12 rounded-full bg-primary-fixed/90 flex items-center justify-center text-on-primary-container">
             <span className="material-symbols-outlined">school</span>
           </div>
           <div className="flex flex-col gap-3">
