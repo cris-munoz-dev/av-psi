@@ -1,3 +1,5 @@
+import aboutImage from '../assets/about_warm.png';
+
 export default function About() {
   return (
     <section
@@ -8,8 +10,8 @@ export default function About() {
         <div className="aspect-[3/4] w-full max-w-md mx-auto relative rounded-lg overflow-hidden border border-outline-variant/30 p-2 bg-surface">
           <img
             alt="Consultorio"
-            className="w-full h-full object-cover rounded"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2ny3AmhGAtsmVuOG2gFyPCuU3GHQUIobE18hXuk9xsCidTWbA0k9vmv15JTx4nMijkOg0XFEUShtukRNqdZXA1Vctww_unSgxSqpTw0E1-74q2-ucdMSawTFrnOGZCiXwvh1fW9zslSD99QpeWydCaQcmkd4DZiyqpKqLRDvLB5lmWLrH9F-Cr3iFRggbJ6dpUw8xdBMN3nIxSfE9QR1gTIF5VPSJ_UqQZP1GS_r0eUEkwhLnZLLbmmOp_5uZ76qyFBOSOfpHmmK"
+            className="w-full h-full object-cover rounded opacity-95"
+            src={aboutImage}
           />
         </div>
         <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 opacity-10 pointer-events-none hidden md:block">
@@ -27,7 +29,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex-1 flex flex-col gap-6 order-1 md:order-2">
-        <span className="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">
+        <span className="font-label-md text-label-md text-tertiary uppercase tracking-widest">
           Sobre Mí
         </span>
         <h2 className="font-headline-lg text-headline-lg text-on-surface">
@@ -41,7 +43,7 @@ export default function About() {
             Mi enfoque terapéutico se basa en crear un espacio verdaderamente libre de juicios, donde la palabra y el silencio tienen el mismo valor. Creo firmemente que la salud mental no es la ausencia de problemas, sino la capacidad de transitar por ellos con herramientas, conciencia y compasión.
           </p>
           <p>
-            Durante mi trayectoria profesional he acompañada a personas en procesos de duelo, manejo de la ansiedad, transición y desarrollo personal, ayudándolos a encontrar claridad, fortaleza y nuevas perspectivas en sus desafíos vitales.
+            Durante mi trayectoria profesional he acompañado a personas en procesos de duelo, manejo de la ansiedad, transición y desarrollo personal, ayudándolos a encontrar claridad, fortaleza y nuevas perspectivas en sus desafíos vitales.
           </p>
         </div>
       </div>
