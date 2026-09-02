@@ -1,4 +1,5 @@
 import heroImage from '../assets/hero_warm.png';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -14,13 +15,13 @@ export default function Hero() {
           La psicoterapia es un viaje hacia la comprensión de ti mismo. Te acompaño en el proceso de encontrar tu propio equilibrio y libertad mental.
         </p>
         <div className="mt-8 flex items-center gap-6">
-          <a
+          <Link
             className="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-on-primary-fixed-variant transition-colors inline-flex items-center gap-2"
-            href="#contacto"
+            to="/agendar"
           >
             Agenda tu sesión
             <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex-1 w-full mt-12 md:mt-0 relative">

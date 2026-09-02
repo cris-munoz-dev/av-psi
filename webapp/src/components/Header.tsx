@@ -1,4 +1,5 @@
 import avLogo from '../assets/av_logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -16,41 +17,47 @@ export default function Header() {
       <nav className="hidden md:flex items-center gap-8">
         <a
           className="text-stone-900 dark:text-white font-semibold border-b border-stone-800 dark:border-white pb-1 hover:opacity-80 transition-all hover:text-[#94A396] duration-300"
-          href="#inicio"
+          href="/#inicio"
         >
           Inicio
         </a>
         <a
           className="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300"
-          href="#sobre-mi"
+          href="/#sobre-mi"
         >
           Sobre Mí
         </a>
         <a
           className="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300"
-          href="#servicios"
+          href="/#servicios"
         >
           Servicios
         </a>
         <a
           className="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300"
-          href="#mision"
+          href="/#mision"
         >
           Misión
         </a>
         <a
           className="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300"
-          href="#contacto"
+          href="/#contacto"
         >
           Contacto
         </a>
+        <Link
+          className="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:text-[#94A396] transition-colors duration-300 font-semibold"
+          to="/admin"
+        >
+          Admin
+        </Link>
       </nav>
-      <a
+      <Link
         className="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity hidden md:inline-flex items-center gap-2"
-        href="#contacto"
+        to="/agendar"
       >
         Agendar Cita
-      </a>
+      </Link>
       <button aria-label="Menu" className="md:hidden text-primary">
         <span className="material-symbols-outlined text-[24px]">menu</span>
       </button>
