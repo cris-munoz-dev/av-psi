@@ -1,7 +1,8 @@
 import { Controller, Get, Post, Body, Param, Req, UseGuards, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PatientsService } from './patients.service';
 import { CreatePatientDto } from './dto/patient.dto';
-import { Roles, RolesGuard } from '../auth/roles.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
 import { RequestWithTrace } from '../shared/middlewares/trace-id.middleware';
 
 @Controller('patients')

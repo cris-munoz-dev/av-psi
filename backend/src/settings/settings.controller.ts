@@ -1,7 +1,8 @@
 import { Controller, Get, Put, Param, Body, Req, UseGuards, BadRequestException, NotFoundException } from '@nestjs/common';
 import { SettingsService } from './settings.service';
 import { UpdateSettingsDto } from './dto/update-settings.dto';
-import { Roles, RolesGuard } from '../auth/roles.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
 import { RequestWithTrace } from '../shared/middlewares/trace-id.middleware';
 
 @Controller('settings')
