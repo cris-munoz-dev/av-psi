@@ -6,7 +6,12 @@ import { PrismaService } from './services/prisma.service';
 
 @Global()
 @Module({
-  providers: [LoggerService, SecretManagerService, CryptoService, PrismaService],
+  providers: [
+    LoggerService,
+    SecretManagerService,
+    CryptoService,
+    PrismaService,
+  ],
   exports: [LoggerService, SecretManagerService, CryptoService, PrismaService],
 })
 export class SharedModule {}

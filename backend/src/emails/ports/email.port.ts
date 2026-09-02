@@ -7,5 +7,8 @@ export interface SendEmailOptions {
 export const EMAIL_PORT = Symbol('EMAIL_PORT');
 
 export interface IEmailPort {
-  sendEmail(options: SendEmailOptions, trx_trace_id: string | null): Promise<boolean>;
+  sendEmail(
+    options: SendEmailOptions,
+    trx_trace_id: string | null,
+  ): Promise<boolean>;
 }

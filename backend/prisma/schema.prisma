@@ -36,6 +36,7 @@ model Patient {
   // Encrypted fields (Application-Level Encryption)
   // Stored as ciphertext (e.g. Base64 strings including IV and AuthTag)
   rutEncrypted   String   @unique
+  rutHash        String   @unique // Used for deterministic searches
   phoneEncrypted String
   dobEncrypted   String
   notesEncrypted String?

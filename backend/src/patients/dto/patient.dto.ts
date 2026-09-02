@@ -4,7 +4,7 @@ import { Status } from '@prisma/client';
 export class CreatePatientDto {
   @IsString()
   @IsNotEmpty()
-  userId!: string;
+  email!: string;
 
   @IsString()
   @IsNotEmpty()

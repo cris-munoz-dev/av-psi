@@ -17,7 +17,7 @@ export class LoggerService {
       process_trace_id,
       timestamp: new Date().toISOString(),
     };
-    
+
     // According to CONSTITUTION.md: no direct console.log in production.
     // We use NestJS built-in Logger which can be configured to write to stdout or cloud logging in JSON
     this.logger.log(JSON.stringify(payload));

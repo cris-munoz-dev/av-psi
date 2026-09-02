@@ -8,10 +8,31 @@ import { AppointmentsModule } from './appointments/appointments.module';
 import { EmailsModule } from './emails/emails.module';
 import { WebhooksModule } from './webhooks/webhooks.module';
 
+import { APP_GUARD } from '@nestjs/core';
+import { JwtAuthGuard } from './auth/jwt-auth.guard';
+import { RolesGuard } from './auth/roles.guard';
+
 @Module({
-  imports: [SharedModule, AuthModule, SettingsModule, PatientsModule, AppointmentsModule, EmailsModule, WebhooksModule],
+  imports: [
+    SharedModule,
+    AuthModule,
+    SettingsModule,
+    PatientsModule,
+    AppointmentsModule,
+    EmailsModule,
+    WebhooksModule,
+  ],
   controllers: [],
-  providers: [],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: JwtAuthGuard,
+    },
+    {
+      provide: APP_GUARD,
+      useClass: RolesGuard,
+    },
+  ],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

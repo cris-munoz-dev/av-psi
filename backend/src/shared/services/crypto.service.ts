@@ -11,7 +11,9 @@ export class CryptoService {
     const hexKey = this.secretManager.get('ENCRYPTION_MASTER_KEY');
     this.key = Buffer.from(hexKey, 'hex');
     if (this.key.length !== 32) {
-      throw new Error('ENCRYPTION_MASTER_KEY must be exactly 32 bytes (64 hex characters) for aes-256-gcm');
+      throw new Error(
+        'ENCRYPTION_MASTER_KEY must be exactly 32 bytes (64 hex characters) for aes-256-gcm',
+      );
     }
   }
 
@@ -21,15 +23,15 @@ export class CryptoService {
    */
   encrypt(text: string): string {
     if (!text) return text;
-    
+
     const iv = crypto.randomBytes(12); // Recommended 12 bytes for GCM
     const cipher = crypto.createCipheriv(this.algorithm, this.key, iv);
-    
+
     let encrypted = cipher.update(text, 'utf8', 'base64');
     encrypted += cipher.final('base64');
-    
+
     const authTag = cipher.getAuthTag();
-    
+
     // Combine parts into a single string: iv(b64).authTag(b64).ciphertext(b64)
     return `${iv.toString('base64')}.${authTag.toString('base64')}.${encrypted}`;
   }
@@ -56,5 +58,14 @@ export class CryptoService {
     decrypted += decipher.final('utf8');
 
     return decrypted;
+  }
+
+  /**
+   * Creates a deterministic hash of the text using HMAC-SHA256.
+   * Useful for indexing and searching encrypted fields securely.
+   */
+  hash(text: string): string {
+    if (!text) return text;
+    return crypto.createHmac('sha256', this.key).update(text).digest('hex');
   }
 }
