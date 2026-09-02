@@ -1,0 +1,91 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  authId    String   @unique // Refers to Supabase auth.users.id
+  email     String   @unique
+  role      Role     @default(PATIENT)
+  patient   Patient?
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  PATIENT
+}
+
+model Patient {
+  id           String   @id @default(uuid())
+  userId       String   @unique
+  user         User     @relation(fields: [userId], references: [id])
+  
+  // Clear text fields
+  firstName    String
+  lastName     String
+  
+  // Encrypted fields (Application-Level Encryption)
+  // Stored as ciphertext (e.g. Base64 strings including IV and AuthTag)
+  rutEncrypted   String   @unique
+  rutHash        String   @unique // Used for deterministic searches
+  phoneEncrypted String
+  dobEncrypted   String
+  notesEncrypted String?
+  
+  status       Status   @default(ACTIVE)
+  appointments Appointment[]
+  
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+}
+
+model Appointment {
+  id             String   @id @default(uuid())
+  patientId      String
+  patient        Patient  @relation(fields: [patientId], references: [id])
+  
+  date           DateTime // Start time
+  durationMins   Int      @default(45)
+  modality       Modality
+  
+  // Encrypted private notes for the appointment
+  notesEncrypted String?
+  
+  status         ApptStatus @default(BOOKED)
+  
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+enum Modality {
+  ONLINE
+  PRESENCIAL
+}
+
+enum ApptStatus {
+  BOOKED
+  CANCELLED
+  RESCHEDULED
+  COMPLETED
+}
+
+model Settings {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     String   // JSON stringified configuration
+  updatedAt DateTime @updatedAt
+}
